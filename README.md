@@ -3,7 +3,7 @@
 This project implements a Machine learning classification system for recognising handwritten digits using Support Vector Machines (SVM) algorithm. 
 The objective of the system is to automatically classify numeric digits based on pixel-based feature representation derived from images of handwritten digits.
 </br>
-The system is trained and evaluated using a dataset from the **UCI Machine Learning Repository**, specifically the **[Optical Recognition of Handwritten Digits Dataset]**(https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits).
+The system is trained and evaluated using a dataset from the **UCI Machine Learning Repository**, specifically the **[Optical Recognition of Handwritten Digits Dataset](https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits)**.
 This dataset contains digit images that are transformed into numerical feature vectors representing pixel intensities. The trained model learns to distinguish between different digits by indentifying patterns in these features.
 </br>
 The project demostrates how classical machine learning methods such as SVM can achive strong performance on image classification tasks without requiring deep learning architecures.
@@ -47,15 +47,10 @@ The digit images were originally **32x32 bitmaps**, but were reduced to **8x8 bl
 The machine learning pipeline consist of several stages:
 ```
 Dataset Acquisition
-&darr;
 Data Preprocessing
-&darr;
 Feature Representation
-&darr;
 Model Training (SVM)
-&darr;
 Model Evaluation
-&darr;
 Prediction
 ```
 ---
