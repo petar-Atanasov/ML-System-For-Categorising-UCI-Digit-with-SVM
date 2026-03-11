@@ -99,16 +99,16 @@ Accuracy = Correct predicitons / Total predictions
 ```
 ---
 # Precision
+Measures how many predicted positives are correct.
 ```
 Precision = TP / (TP + FP)
 ```
-Measures how many predicted positives are correct.
 ---
 # Recall
+Measires how many actual positives were corectly detected.
 ```
 Recall = TP / (TP + FN)
 ```
-Measires how many actual positives were corectly detected.
 ---
 # F1 Score
 Harmonic mean of precision and recall.
