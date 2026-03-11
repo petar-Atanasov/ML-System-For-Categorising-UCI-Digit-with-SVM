@@ -2,10 +2,10 @@
 
 This project implements a Machine learning classification system for recognising handwritten digits using Support Vector Machines (SVM) algorithm. 
 The objective of the system is to automatically classify numeric digits based on pixel-based feature representation derived from images of handwritten digits.
-</br>
+
 The system is trained and evaluated using a dataset from the **UCI Machine Learning Repository**, specifically the **[Optical Recognition of Handwritten Digits Dataset](https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits)**.
 This dataset contains digit images that are transformed into numerical feature vectors representing pixel intensities. The trained model learns to distinguish between different digits by indentifying patterns in these features.
-</br>
+
 The project demostrates how classical machine learning methods such as SVM can achive strong performance on image classification tasks without requiring deep learning architecures.
 
 ---
@@ -14,7 +14,7 @@ Handwritten digit recognition is a **multiclass classification problem**  where 
 ```
 0,1,2,3,4,5,6,7,8,9
 ```
-</br>
+
 The challenge lies in the variability of handwritten digits:
 - Different writting styles
 - Variation in stroke thickness
@@ -32,7 +32,7 @@ The datased used comes from the **UCI Machine Learning Repository**.
 | number of classes | 10 |
 | Featires per sample | 64 |
 | image size | 8x8 pixels |
-</br>
+
 Each digit image is converted into a vector of **64 features**, representing the grayscale intesiity of each pixel.
 The values range between:
 ```
@@ -65,65 +65,65 @@ Each row corresponds to a single diigit sample.
 Typical preprocessing steps include:
 - Normalising pixel values
 - Splitting dataset into:
-  
+```  
 Training set
 Testing set
-`
+```
 Common split: 
-`
+```
 70% training
 30% testing
-`
+```
 ---
 ### Feature Representation
 Each digit image is represented as:
-`
+```
 8 x 8 pixel grid
-`
+```
 Flattened into a vector:
-`
+```
 64-dimensional feature vector
-`
+```
 Example:
-`
+```
 [0,0,5,16,2,1,0,0,...]
-`
+```
 ---
 ## Evaluation Metrics
 The models performance is evaluated using classification metrics.
-</br>
-#Accuracy 
+
+# Accuracy 
 Measures the proportion of the correct predictions.
-`
+```
 Accuracy = Correct predicitons / Total predictions
-`
+```
 ---
-#Precision
-`
+# Precision
+```
 Precision = TP / (TP + FP)
-`
+```
 Measures how many predicted positives are correct.
 ---
 # Recall
-`
+```
 Recall = TP / (TP + FN)
-`
+```
 Measires how many actual positives were corectly detected.
 ---
 # F1 Score
 Harmonic mean of precision and recall.
-`
+```
 F1 = 2 * (precision * recall) / (precision + recall)
-`
+```
 # Confusion Matrix
 Shows how many samples were classified correctly and incorectly.
-</br>
+
 Example:
 | Actual | Predicted | 
 |------|------|
 | 3 | 3 |
 | 5 | 8 |
-</br>
+
 This helps identify which digits are frequently confused.
 ---
 ## Experimental Results
