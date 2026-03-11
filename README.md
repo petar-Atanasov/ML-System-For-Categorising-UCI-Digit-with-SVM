@@ -123,7 +123,6 @@ Example:
 |------|------|
 | 3 | 3 |
 | 5 | 8 |
-
 This helps identify which digits are frequently confused.
 ---
 ## Experimental Results
