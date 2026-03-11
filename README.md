@@ -34,13 +34,11 @@ The datased used comes from the **UCI Machine Learning Repository**.
 | image size | 8x8 pixels |
 </br>
 Each digit image is converted into a vector of **64 features**, representing the grayscale intesiity of each pixel.
-</br>
 The values range between:
 ```
 0 - 16
 ```
 representing pixel brightness.
-</br>
 The digit images were originally **32x32 bitmaps**, but were reduced to **8x8 blocks** to simplify the feature space and reduce dimenstionality.
 ---
 ## System Architecure
