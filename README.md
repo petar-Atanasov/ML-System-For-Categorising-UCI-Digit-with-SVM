@@ -11,9 +11,9 @@ The project demostrates how classical machine learning methods such as SVM can a
 ---
 ## Problem Statement 
 Handwritten digit recognition is a **multiclass classification problem**  where the goal is to assign each input sample to one of the ten possible classes:
-`
+```
 0,1,2,3,4,5,6,7,8,9
-`
+```
 </br>
 The challenge lies in the variability of handwritten digits:
 - Different writting styles
@@ -35,30 +35,30 @@ The datased used comes from the **UCI Machine Learning Repository**.
 </br>
 Each digit image is converted into a vector of **64 features**, representing the grayscale intesiity of each pixel.
 The values range between:
-`
+```
 0 - 16
-`
+```
 representing pixel brightness.
 The digit images were originally **32x32 bitmaps**, but were reduced to **8x8 blocks** to simplify the feature space and reduce dimenstionality.
 ---
 ## System Architecure
 The machine learning pipeline consist of several stages:
-`
+```
 Dataset Acquisition
 Data Preprocessing
 Feature Representation
 Model Training (SVM)
 Model Evaluation
 Prediction
-`
+```
 ---
 ## Data Processing Pipeline
 ### Data Loading
 The dataset is imported and stored as:
-`
+```
 x = features (pixel values)
 y = labels (digits 0-9)
-`
+```
 Each row corresponds to a single diigit sample.
 ---
 ### Data Preprocessing
