@@ -45,15 +45,15 @@ The digit images were originally **32x32 bitmaps**, but were reduced to **8x8 bl
 The machine learning pipeline consist of several stages:
 ```
 Dataset Acquisition
-↓
+        ↓
 Data Preprocessing
-↓
+        ↓
 Feature Representation
-↓
+        ↓
 Model Training (SVM)
-↓
+        ↓
 Model Evaluation
-↓
+        ↓
 Prediction
 ```
 ---
