@@ -20,6 +20,7 @@ The challenge lies in the variability of handwritten digits:
 - Variation in stroke thickness
 - Position and orientation differences
 
+
 A machine learning classifier must learn to generalise these patterns and accurately classify unseen samples.
 ---
 ## Dataset Description
@@ -38,7 +39,9 @@ The values range between:
 ```
 0 - 16
 ```
+
 representing pixel brightness.
+
 The digit images were originally **32x32 bitmaps**, but were reduced to **8x8 blocks** to simplify the feature space and reduce dimenstionality.
 ---
 ## System Architecure
